@@ -18,7 +18,7 @@ We'll be making a simple Node app today that converts from Celsius to Fahrenheit
 
 ## How to install Jest using NPM
 
-Before taking any action, it's important to be in the _**root directory**_ of your application via the terminal. That means you should see **FINAL.js**, **START.js**, and **index.js** if you use the `ls` command in the terminal. From now on, we will use **index.js** instead of **prog.js** because this is standard for a Node application. This is similar to the way **index.html** is the standard for the default web page name.
+Before taking any action, it's important to be in the _**root directory**_ of your application via the terminal. 
 
 One way we can ensure we're in the right place is to use VS Code to open an integrated terminal where the file is. You can pull up a menu on that particular file in VS Code's file explorer and choose "Open In Integrated Terminal". You have to do what's typically called a "secondary click" on the file to pull up this menu. This is typically done in one of three ways:
 
