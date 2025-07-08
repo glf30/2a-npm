@@ -1,7 +1,7 @@
 // Add your interface code below!
 const {
-  fahrenheitToCelsius,
-  celsiusToFahrenheit,
+  fahrenheitToCelcius,
+  celciusToFahrenheit,
   convertTemperature,
 } = require("./logic");
 
@@ -9,26 +9,29 @@ const {
 
 // 2. Grab the variables you'll need from the user's input (process.argv).
 
-const args = process.argv.slice(2);
+/*
+process.argv - array that keeps track of program inputs
+node interface.js - ['node.exe', 'interface.js']
+node interface.js 32 f - ['node.exe', 'interface.js', '32', 'f' ]
+*/
+console.log(process.argv)
+//['node.exe', 'interface.js', '32', 'f' ]
+// process.argv[0] = node.exe
+// process.arg
+const degrees = parseFloat(process.argv[2]); //parseFloat - convert to Decimal
+const scale = process.argv[3];
+// console.log("Degrees: " + degrees)
+// console.log("Scale: " + scale)
 
-const scale = args[1];
-
-const degrees = parseFloat(args[0]);
 
 // 3. Call the function that will convert the temperature, passing in the user's input.
-if (isNaN(degrees) || (scale !== "f" && scale !== "c")) {
-  console.error("Usage: node interface.js <temperature> <scale: 'f' or 'c'>");
-  process.exit(1);
-}
+
+console.log("Converting...")
+const temperature = convertTemperature(degrees, scale);
+
 // 4. Print the result to the console.
 
-const convertedTemp = convertTemperature(degrees, scale);
-
-console.log(
-  `Converted temperature: ${convertedTemp.toFixed(2)} degrees ${
-    scale === "f" ? "Celsius" : "Fahrenheit"
-  }`
-);
+console.log(temperature.toFixed(2))
 
 /**
  *
