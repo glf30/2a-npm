@@ -38,19 +38,6 @@ npm init -y
 
 When this is done for the first time, a **package.json** should appear. Open the file. There should be a property that says `"main": "index.js",`. If it says `"main": "final.js",` instead, edit this file to say `"main": "index.js",`. Most things in a **package.json** file should never be edited, but for the sake of learning about Node applications correctly, these small details must be aligned correctly.
 
-Once this is prepared, use the following command to install the Jest module:
-
-B) In terminal, install the Jest module
-
-```
-npm install jest
-```
-
-A new file called **package-lock.json** should appear. A folder called **node_modules** should also appear, which holds the currently installed version of Jest and all of its dependencies.
-- Change the `test` field of `package.json` to the value "jest"
-
-We can run our tests now with `npm run test`. If you see a bunch of test failures, don't worry!  We still have to implement code for them to pass!
-
 ## What is a package.json
 
 The **package.json** file is the heart of any Node project. It records important metadata about a project, and also defines functional attributes of a project that npm uses to install dependencies, run scripts, and identify the entry point to our package. It is generated once you install Node modules. Dependencies are just modules that are REQUIRED for your application to function; your application DEPENDS on the modules.
@@ -61,7 +48,7 @@ The **package-lock.json** is created for locking the dependency with the install
 
 ## Tempinator Project
 
-Now that we’ve installed Jest, let’s explore another core benefit of NPM: using **third-party libraries** to save time and avoid reinventing the wheel.
+Now let’s explore the core benefit of NPM: using **third-party libraries** to save time and avoid reinventing the wheel.
 
 We’re going to build a small Node.js app that converts temperatures between Fahrenheit and Celsius — and we’ll **use a prebuilt NPM package** to handle the conversion for us.
 
