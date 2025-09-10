@@ -249,7 +249,7 @@ console.log(
 );
 ```
 
-Using a library like `@khanisak/temperature-converter` or `jest` is a small taste of what professional developers do every day:
+Using a library like `@khanisak/temperature-converter` is a small taste of what professional developers do every day:
 
 - Research existing tools
 
