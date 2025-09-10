@@ -16,7 +16,7 @@ We'll be making a simple Node app today that converts from Celsius to Fahrenheit
 - NPM is a package manager for Node.js packages (otherwise known as modules).
 - The NPM program is installed on your computer when you installed Node.js
 
-## How to install Jest using NPM
+## How to setup NPM
 
 Before taking any action, it's important to be in the _**root directory**_ of your application via the terminal. 
 
