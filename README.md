@@ -9,7 +9,6 @@ We'll be making a simple Node app today that converts from Celsius to Fahrenheit
 - How to install third-party libraries.
 - How to work with `package.json`.
 - How scripts in `package.json` work.
-- How to take user input in the terminal using `process.argv`.
 
 ## What is NPM
 
