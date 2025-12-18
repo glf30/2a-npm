@@ -1,9 +1,5 @@
 # Lesson 2A: NPM
 
-### Introduction
-
-We'll be making a simple Node app today that converts from Celsius to Fahrenheit or vice versa. It will take input from users on the command line and output the answer they're looking for.  To achieve this, we will be utilizing third-party libraries.
-
 ### Learning Objectives
 - What is NPM
 - How to install third-party libraries.
